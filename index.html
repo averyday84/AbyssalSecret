@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name ="robots" content="index,follow">
+        <meta name="author" content="Avery Day">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Gwendolyn 'AbyssalSecret' Grace's product gallery</title>
+        <meta name="description" content="Explore Gwendolyn 'AbyssalSecret' Grace's enchanting prints and stickers. Embrace the extraordinary magic of her artistry today!">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="styles.css">
+        <script src="script.js" async defer></script>
+    </head>
+    <body>
+        <header>
+            <h1>Join us in the Abyss!</h1>
+            <p>Step into the AbyssalSecret Art Gallery and let your imagination run wild. Whether you're an art connoisseur or someone looking to add a touch of artistic wonder to your life, our collection has something for everyone.</p>
+            <p>Discover the magic of Gwendolyn "AbyssalSecret" Grace's artistry today. Embrace the extraordinary.</p>
+            <button id="darkModeToggle">Toggle Dark Mode</button>
+        </header>
+        <main>
+            <section id="switcher1">
+                <h2>Products</h2>
+                <section id="switcherButtons">
+                    <h2 class="sr-only">Click on a Button to View a Product</h2>
+                    <button id="btn1">Witch's Spell</button>
+                    <button id="btn2">Sticker Pack</button>
+                    <button id="btn3">Botanical Enchantment</button>
+                </section>
+                <section id="product1" class="currentItem">
+                    <h3>Witch's Spell</h3>
+                    <img src="witch.jpg" alt="A young witch glowing orange in front of the moon while floating on her broomstick.">
+                    <p>Immerse yourself in the captivating world of digital art with "Witch's Spell." This enchanting digital painting transports you to a realm where magic and imagination intertwine.</p>
+                </section>
+                <section id="product2" class="hiddenItem">
+                    <h3>AbyssalSecret's Assorted Sticker Pack</h3>
+                    <img src="stickers.jpg" alt="Four stickers beside a ruler between one to four inches long. Two depict black cats, one depicts a witch in front of the moon, and one depicts a relaxed elf with a drink in her hand">
+                    <p>Dive into a world of artistic enchantment with AbyssalSecret's Assorted Sticker Pack. These whimsical stickers are a delightful way to add a touch of creativity and magic to your life.</p>
+                </section>
+                <section id="product3" class="hiddenItem">
+                    <h3>Botanical Enchantment</h3>
+                    <img src="plants.jpg" alt="A woman with a short purple bob, large black hat, and short black dress. She is surrounded by plants.">
+                    <p>Experience the serene beauty of nature with "Botanical Enchantment," a stunning print that transports you to a world where a purple-haired woman thrives amidst lush greenery.</p>
+                </section>
+            </section>
+            <section id="form1">
+                <form>
+                    <h2>Sign up for our newsletter!</h2>
+                    <p>If you would like to be the first to hear about our newest products and latest restocks, sign up here!</p>
+                    <div>
+                        <label for="fullName">Full Name</label>
+                        <span class="message" id="fullNameError">Please enter your first and last name.</span>
+                        <input type="text" id="fullName" name="fullName" required>
+                    </div>
+                    <div class="radio-group">
+                        <fieldset>
+                            <legend>Preferred Contact Method</legend>
+                            <span class="message" id="contactMethodError">Please select a contact method.</span>
+                            <input type="radio" id="phoneOption" name="contact" value="phone" required>
+                            <label for="phoneOption">Phone</label>
+                            <input type="radio" id="emailOption" name="contact" value="email" required>
+                            <label for="emailOption">Email</label>
+                        </fieldset>
+                    </div>
+                    <div>
+                        <label for="email">Email</label>
+                        <span class="message" id="emailError">Please enter a valid email address.</span>
+                        <input type="email" id="email" name="email">
+                    </div>
+                    <div>
+                        <label for="phone">Phone</label>
+                        <span class="message" id="phoneError">Please enter a valid 10-digit phone number.</span>
+                        <input type="tel" id="phone" name="phone">
+                    </div>
+                    <div>
+                        <label for="message">Message</label>
+                        <span class="message" id="messageError">Please enter a message.</span>
+                        <input type="text" id="message" Name="message">
+                    </div>
+                    <input type="submit" name="submit" value="submit" required>
+                </form>
+            </section>
+            <section id="game1">
+                <div>
+                    <h2>Lets play a guessing game!</h2>
+                    <form>
+                        <label for="numGuess">Enter a Number Between 1 and 10:</label>
+                        <span class="message">Please enter a number from 1 to 10</span>
+                        <input type="number" name="numGuess" id="numGuess">
+                        <input type="submit" name="guessGame" id="guessGame" value="Play the Game!">
+                    </form>
+                    <section id="gameDisplay">
+                        <h3>Guess a Number!</h3>
+                        <p>Enter a number between 1 and 10 in the box to the left and click the button to play. If your number matches, you win!</p>
+                        <p id="gameOutput"></p>
+                    </section>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <p>Illustrations and images are the property of <a href="https://www.instagram.com/abyssalsecret">Gwendolyn "AbyssalSecret" Grace</a></p>
+            <p>Coded by Avery Day</p>
+        </footer>
+    </body>
+</html>
